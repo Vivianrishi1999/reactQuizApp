@@ -1,0 +1,26 @@
+{
+    "questions": [
+
+
+        {
+            "question": "Whats is Luffy's Devil fruit?",
+            "choices": ["Gomu gomu", "Nika", "Bari bari", "Shadow shadow"],
+            "correctAnswerIdx": 1
+        },
+        {
+            "question": "Whats is Luffy's Devil fruit?",
+            "choices": ["Gomu gomu", "Nika", "Bari bari", "Shadow shadow"],
+            "correctAnswerIdx": 1
+        },
+        {
+            "question": "Whats is Luffy's Devil fruit?",
+            "choices": ["Gomu gomu", "Nika", "Bari bari", "Shadow shadow"],
+            "correctAnswerIdx": 1
+        },
+        {
+            "question": "Whats is Luffy's Devil fruit?",
+            "choices": ["Gomu gomu", "Nika", "Bari bari", "Shadow shadow"],
+            "correctAnswerIdx": 1
+        }
+    ]
+}

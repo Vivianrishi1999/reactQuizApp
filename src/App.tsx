@@ -1,27 +1,31 @@
-import styles from './App.module.scss';
-
+import QuestionComp from "./components/Question";
+import StatBar from "./components/StatBar";
+import questions from "./questions.json"
+import { Questions } from './types';
+import { useState } from "react";
 function App() {
+
+    const allQuestions = questions as Questions
+    const [curretnQuestionIdx, setCurrentQuestionIdx] = useState(0)
+    const [correctAnswers, setCorrectAnswers] = useState(0)
+    const [incorrectAnswers, setInCorrectAnswers] = useState(0)
+
     return (
-        <div className={styles.App}>
-            <h2>Welcome to your App Component 🎉</h2>
-            <span>
-                Double click to edit App component
-                <br />
-                &amp; drag here elements from + Add <b>Elements</b> Panel
-            </span>
-            <p
-                style={{
-                    fontSize: '12px',
-                    marginTop: '80px',
-                    display: 'flex',
-                    gap: '3px',
-                    justifyContent: 'center',
-                }}
-            >
-                This project is using <img src="/src/assets/vite.svg" width="12" />+
-                <img src="/src/assets/typescript.svg" width="12" />
-                Visit vitejs.dev to learn more.
-            </p>
+        <div>
+            <StatBar currentQuestion={curretnQuestionIdx + 1} 
+                     totalQuestions={allQuestions.questions.length} 
+                     correct={correctAnswers} 
+                     incorrect={incorrectAnswers}            
+            
+            
+            
+            />
+            <QuestionComp
+            
+            question={allQuestions.questions[curretnQuestionIdx]}
+            onSubmit={()=> {}}
+            
+            />
         </div>
     );
 }
